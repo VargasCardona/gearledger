@@ -1,37 +1,110 @@
-# GearLedger
+
+# 🎸 GearLedger
 
 ![Repo Size](https://img.shields.io/github/repo-size/VargasCardona/gearledger)
-![GitHub License](https://img.shields.io/github/license/VargasCardona/gearledger)
-![GitHub last commit](https://img.shields.io/github/last-commit/VargasCardona/gearledger)
+![License](https://img.shields.io/github/license/VargasCardona/gearledger)
+![Last Commit](https://img.shields.io/github/last-commit/VargasCardona/gearledger)
 
-**GearLedger** is a Spring Boot RESTful API designed to help guitarists track and manage their gear collection. Whether you're into pedals, amps, or your favorite custom axe, this API gives you full CRUD control over your gear setup.
+> **GearLedger** is a modern, minimalist REST API built with Spring Boot that empowers guitarists to manage their gear collection with ease. Whether you're a tone-chasing pedalhead or a proud collector of vintage guitars, GearLedger keeps your rig organized.
 
-## Features
+---
 
-- Create, Read, Update, Delete guitar gear entries
-- Filter by gear type (pedal, guitar, amp, etc.)
-- Built with Spring Boot + JPA (Maven-based)
-- Clean layered architecture (Controller, Service, Repository)
-- Follows RESTful best practices
+## ✨ Features
 
-## Tech Stack
+- 🔁 Full **CRUD** operations for your gear (Guitars, Pedals, Amps, etc.)
+- 🧠 Clean and **layered architecture**: Controller → Service → Repository
+- 🔍 **Filter gear by type** to quickly find what you're looking for
+- 🌐 Follows RESTful API **best practices**
+- 💾 Includes **H2** in-memory database for instant testing (switchable to MySQL/PostgreSQL)
+- 🧪 Ready for **unit testing and code coverage** with JUnit, Mockito & JaCoCo
+- 🛠️ Easily extendable for authentication, user management, and tagging
 
-- Java 17
-- Spring Boot 3.x
-- Spring Web
-- Spring Data JPA
-- H2 Database (can switch to MySQL/PostgreSQL)
-- Lombok (optional, for boilerplate reduction)
-- Maven
+---
 
-## Prerequisites
+## ⚙️ Tech Stack
 
-- Java 17+
-- Maven 3.8+
+| Technology     | Purpose                        |
+|----------------|--------------------------------|
+| ☕ Java 17      | Modern Java language features  |
+| 🚀 Spring Boot 3.x | Robust backend framework     |
+| 🌍 Spring Web   | RESTful API development        |
+| 🗃️ Spring Data JPA | Simplified DB interaction     |
+| 🧪 JUnit & Mockito | Testing and mocking          |
+| 📊 JaCoCo       | Test coverage reporting        |
+| 🛢️ H2 Database  | Lightweight in-memory DB       |
+| 🧱 Maven         | Dependency and build management |
+| ✂️ Lombok (optional) | Less boilerplate, cleaner code |
 
-## Contributors
+---
 
-- **Nicolás Vargas Cardona** - [GitHub Profile](https://github.com/VargasCardona)
+## 🚀 Getting Started
 
-## License
-This project is licensed under the [GNU General public license](https://www.gnu.org/licenses/) - see the LICENSE file for details.
+### ✅ Prerequisites
+
+- Java 17+ installed
+- Maven 3.8+ installed
+
+### ▶️ Clone and Run
+
+```bash
+git clone https://github.com/VargasCardona/gearledger.git
+cd gearledger
+./mvnw spring-boot:run
+```
+
+The app will be available at: `http://localhost:8080/api/gear`
+
+### 🧪 Run Tests
+
+```bash
+./mvnw test
+```
+
+To generate coverage reports (if configured):
+
+```bash
+./mvnw jacoco:report
+```
+
+Coverage will be available in `target/site/jacoco/index.html`.
+
+---
+
+## 📁 Example Gear Entry
+
+```json
+{
+  "name": "Boss DS-1",
+  "type": "Pedal",
+  "brand": "Boss",
+  "description": "Classic distortion pedal for aggressive tone."
+}
+```
+
+---
+
+## 🔄 Future Improvements
+
+- ✅ User authentication & authorization (e.g. Spring Security)
+- 🏷️ Tagging gear (e.g. “Live”, “Studio”, “Wishlist”)
+- 🖼️ Image uploads and media management
+- 📦 Docker support for easy deployment
+- ☁️ Cloud integration (AWS S3, RDS)
+
+---
+
+## 👨‍💻 Author
+
+**Nicolás Vargas Cardona**  
+📎 [GitHub Profile](https://github.com/VargasCardona)
+
+---
+
+## 📄 License
+
+Licensed under the [GNU General Public License](https://www.gnu.org/licenses/).  
+See the [LICENSE](./LICENSE) file for details.
+
+---
+
+> Made with 🎵 and ☕ for fellow musicians.
