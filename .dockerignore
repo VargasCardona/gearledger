@@ -1,0 +1,13 @@
+.gradle
+build
+.dockerignore
+Dockerfile
+**/*.iml
+.idea
+*.log
+*.md
+*.bat
+*.cmd
+HELP.md
+LICENSE
+README.md
